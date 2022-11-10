@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "BmEqTBSzH4JVUaNEpxwkkUjPTuajqF7pjgS8mNUUoPI=",
+  "Source": "CollisionsEventRestAPI.CollisionsEventRestAPI",
+  "BasePath": "_content/CollisionsEventRestAPI.CollisionsEventRestAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

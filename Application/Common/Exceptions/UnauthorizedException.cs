@@ -27,5 +27,10 @@ namespace CollisionsEventRestAPI.Application.Common.Exceptions
             : base($"Entity \"{name}\" ({key}) is unauthorized.")
         {
         }
+
+        public UnauthorizedException(string name, object key, int invoker)
+            : base($"Entity \"{name}\" ({key}) is unauthorized for \"{invoker}\".")
+        {
+        }
     }
 }

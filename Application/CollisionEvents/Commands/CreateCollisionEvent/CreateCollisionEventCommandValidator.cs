@@ -35,8 +35,7 @@ namespace CollisionsEventRestAPI.Application.CollisionEvents.Commands.CreateColl
                 .NotNull();
 
             RuleFor(x => x.InvokerOperatorId)
-                .NotNull()
-                .Equal(x => x.OperatorId);
+                .NotNull();
         }
     }
 }

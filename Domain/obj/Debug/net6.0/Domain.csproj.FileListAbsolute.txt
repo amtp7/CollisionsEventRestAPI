@@ -10,3 +10,15 @@ C:\Git\temp\CollisionsEventRestAPI\CollisionsEventRestAPI\Domain\obj\Debug\net6.
 C:\Git\temp\CollisionsEventRestAPI\CollisionsEventRestAPI\Domain\obj\Debug\net6.0\refint\CollisionsEventRestAPI.Domain.dll
 C:\Git\temp\CollisionsEventRestAPI\CollisionsEventRestAPI\Domain\obj\Debug\net6.0\CollisionsEventRestAPI.Domain.pdb
 C:\Git\temp\CollisionsEventRestAPI\CollisionsEventRestAPI\Domain\obj\Debug\net6.0\ref\CollisionsEventRestAPI.Domain.dll
+C:\Git\CollisionsEventRestAPI\Domain\bin\Debug\net6.0\CollisionsEventRestAPI.Domain.deps.json
+C:\Git\CollisionsEventRestAPI\Domain\bin\Debug\net6.0\CollisionsEventRestAPI.Domain.dll
+C:\Git\CollisionsEventRestAPI\Domain\bin\Debug\net6.0\CollisionsEventRestAPI.Domain.pdb
+C:\Git\CollisionsEventRestAPI\Domain\obj\Debug\net6.0\Domain.csproj.AssemblyReference.cache
+C:\Git\CollisionsEventRestAPI\Domain\obj\Debug\net6.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Git\CollisionsEventRestAPI\Domain\obj\Debug\net6.0\Domain.AssemblyInfoInputs.cache
+C:\Git\CollisionsEventRestAPI\Domain\obj\Debug\net6.0\Domain.AssemblyInfo.cs
+C:\Git\CollisionsEventRestAPI\Domain\obj\Debug\net6.0\Domain.csproj.CoreCompileInputs.cache
+C:\Git\CollisionsEventRestAPI\Domain\obj\Debug\net6.0\CollisionsEventRestAPI.Domain.dll
+C:\Git\CollisionsEventRestAPI\Domain\obj\Debug\net6.0\refint\CollisionsEventRestAPI.Domain.dll
+C:\Git\CollisionsEventRestAPI\Domain\obj\Debug\net6.0\CollisionsEventRestAPI.Domain.pdb
+C:\Git\CollisionsEventRestAPI\Domain\obj\Debug\net6.0\ref\CollisionsEventRestAPI.Domain.dll

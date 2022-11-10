@@ -2,7 +2,6 @@
 using CollisionsEventRestAPI.Application.CollisionStatus.Queries;
 using CollisionsEventRestAPI.Application.Common.Exceptions;
 using CollisionsEventRestAPI.Application.DTOs;
-using MediatR;
 using MediatR.Pipeline;
 
 namespace CollisionsEventRestAPI.Application.CollisionEvents.Commands.DeleteCollisionEvent

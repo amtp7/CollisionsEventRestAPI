@@ -7,8 +7,10 @@ namespace CollisionsEventRestAPI.CollisionsEventRestAPI.Controllers
     public class CollisionStatusController : ApiControllerBase
     {
         [HttpGet]
-        public async Task<ActionResult<PaginatedList<CollisionEventDTO>>> GetOperatorCollisionStatusAsync([FromQuery] GetOperatorCollisionStatusQuery query)
+        public async Task<ActionResult<PaginatedList<CollisionEventDTO>>> GetOperatorCollisionStatusAsync([FromHeader] int operatorId, [FromQuery] GetOperatorCollisionStatusQuery query)
         {
+            query.InvokerOperatorId = operatorId;
+
             return await Mediator.Send(query);
         }
     }

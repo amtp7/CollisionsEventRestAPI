@@ -1,8 +1,9 @@
-﻿using CollisionsEventRestAPI.Application.Common.Interfaces;
+﻿using AutoMapper;
+using CollisionsEventRestAPI.Application.Common.Exceptions;
+using CollisionsEventRestAPI.Application.Common.Interfaces;
 using CollisionsEventRestAPI.Application.DTOs;
 using CollisionsEventRestAPI.Application.Mappers;
 using MediatR;
-using AutoMapper;
 
 namespace CollisionsEventRestAPI.Application.CollisionStatus.Queries
 {
@@ -16,8 +17,14 @@ namespace CollisionsEventRestAPI.Application.CollisionStatus.Queries
             _collisionStatusRepository = collisionStatusRepository;
             _mapper = mapper;
         }
+
         public async Task<PaginatedList<CollisionEventDTO>> Handle(GetOperatorCollisionStatusQuery request, CancellationToken cancellationToken)
         {
+            if (request.InvokerOperatorId != request.OperatorId)
+            {
+                throw new UnauthorizedException();
+            }
+
             var entities = await _collisionStatusRepository.GetOperatorCollisionStatusAsync(
                 request.OperatorId, 
                 request.PageNumber, 

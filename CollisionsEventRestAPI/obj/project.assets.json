@@ -4141,11 +4141,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Git\\temp\\CollisionsEventRestAPI\\CollisionsEventRestAPI\\CollisionsEventRestAPI\\CollisionsEventRestAPI.csproj",
+      "projectUniqueName": "C:\\Git\\CollisionsEventRestAPI\\CollisionsEventRestAPI\\CollisionsEventRestAPI.csproj",
       "projectName": "CollisionsEventRestAPI.CollisionsEventRestAPI",
-      "projectPath": "C:\\Git\\temp\\CollisionsEventRestAPI\\CollisionsEventRestAPI\\CollisionsEventRestAPI\\CollisionsEventRestAPI.csproj",
+      "projectPath": "C:\\Git\\CollisionsEventRestAPI\\CollisionsEventRestAPI\\CollisionsEventRestAPI.csproj",
       "packagesPath": "C:\\Users\\amtp1\\.nuget\\packages\\",
-      "outputPath": "C:\\Git\\temp\\CollisionsEventRestAPI\\CollisionsEventRestAPI\\CollisionsEventRestAPI\\obj\\",
+      "outputPath": "C:\\Git\\CollisionsEventRestAPI\\CollisionsEventRestAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\amtp1\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4163,11 +4163,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Git\\temp\\CollisionsEventRestAPI\\CollisionsEventRestAPI\\Application\\Application.csproj": {
-              "projectPath": "C:\\Git\\temp\\CollisionsEventRestAPI\\CollisionsEventRestAPI\\Application\\Application.csproj"
+            "C:\\Git\\CollisionsEventRestAPI\\Application\\Application.csproj": {
+              "projectPath": "C:\\Git\\CollisionsEventRestAPI\\Application\\Application.csproj"
             },
-            "C:\\Git\\temp\\CollisionsEventRestAPI\\CollisionsEventRestAPI\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "C:\\Git\\temp\\CollisionsEventRestAPI\\CollisionsEventRestAPI\\Infrastructure\\Infrastructure.csproj"
+            "C:\\Git\\CollisionsEventRestAPI\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "C:\\Git\\CollisionsEventRestAPI\\Infrastructure\\Infrastructure.csproj"
             }
           }
         }

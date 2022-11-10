@@ -1,4 +1,5 @@
-﻿using CollisionsEventRestAPI.Application.Common.Exceptions;
+﻿using System.Threading;
+using CollisionsEventRestAPI.Application.Common.Exceptions;
 using CollisionsEventRestAPI.Application.Common.Interfaces;
 using CollisionsEventRestAPI.Domain.Entities;
 using CollisionsEventRestAPI.Domain.Events;
@@ -16,40 +17,49 @@ namespace CollisionsEventRestAPI.Infrastructure.Repositories
             _collisionEventsDbContext = collisionEventsDbContext;
         }
 
+        public async Task<CollisionEvent> GetCollisionEventAsync(Guid collisionEventId, CancellationToken cancellationToken)
+        {
+            var entity = await _collisionEventsDbContext.CollisionEvents.FindAsync(collisionEventId, cancellationToken);
+
+            if (entity == null)
+            {
+                throw new NotFoundException(nameof(CollisionEvent), collisionEventId);
+            }
+
+            return entity;
+        }
+
         public async Task<Guid> CreateCollisionEventAsync(CollisionEvent collisionEvent, CancellationToken cancellationToken)
         {
-            var entityExists = (await _collisionEventsDbContext.CollisionEvents.FindAsync(collisionEvent.CollisionEventId, cancellationToken)) == null;
+            var existingEntity = await _collisionEventsDbContext.CollisionEvents.FindAsync(collisionEvent.CollisionEventId, cancellationToken);
 
-            if (entityExists)
+            if (existingEntity != null)
             {
                 throw new AlreadyExistsException(nameof(CollisionEvent), collisionEvent.CollisionEventId);
             }
 
             _collisionEventsDbContext.CollisionEvents.Add(collisionEvent);
-
             await _collisionEventsDbContext.SaveChangesAsync(cancellationToken);
-
             collisionEvent.AddDomainEvent(new CollisionEventCreatedEvent(collisionEvent));
                      
             return collisionEvent.CollisionEventId;
         }
 
-        public async Task<Unit> DeleteCollisionEventAsync(Guid collisionEventId, int operatorId, CancellationToken cancellationToken)
+        public async Task<Unit> DeleteCollisionEventAsync(Guid collisionEventId, CancellationToken cancellationToken)
         {
             var entityToDelete = await _collisionEventsDbContext.CollisionEvents.FindAsync(collisionEventId, cancellationToken);
-
+       
             if (entityToDelete == null)
             {
                 throw new NotFoundException(nameof(CollisionEvent), collisionEventId);
-            }
-
-            entityToDelete.AddDomainEvent(new CollisionEventDeletedEvent(entityToDelete));
+            }          
 
             _collisionEventsDbContext.CollisionEvents.Remove(entityToDelete);
-
             await _collisionEventsDbContext.SaveChangesAsync(cancellationToken);
+            entityToDelete.AddDomainEvent(new CollisionEventDeletedEvent(entityToDelete));
 
             return Unit.Value;
         }
+       
     }
 }

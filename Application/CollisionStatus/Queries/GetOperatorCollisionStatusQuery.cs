@@ -9,5 +9,8 @@ namespace CollisionsEventRestAPI.Application.CollisionStatus.Queries
         public int OperatorId { get; set; }
         public int PageNumber { get; init; } = 1;
         public int PageSize { get; init; } = 10;
+
+        [JsonIgnore]
+        public int? InvokerOperatorId { get; set; }
     }
 }

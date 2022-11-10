@@ -1,4 +1,5 @@
-﻿using FluentValidation;
+﻿using CollisionsEventRestAPI.Application.Common.Exceptions;
+using FluentValidation;
 using MediatR;
 using ValidationException = CollisionsEventRestAPI.Application.Common.Exceptions.ValidationException;
 

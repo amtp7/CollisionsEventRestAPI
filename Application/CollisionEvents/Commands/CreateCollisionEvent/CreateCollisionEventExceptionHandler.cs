@@ -23,6 +23,11 @@ namespace CollisionsEventRestAPI.Application.CollisionEvents.Commands.CreateColl
                     state.SetHandled(_response);
                     break;
 
+                case UnauthorizedException:
+                    _response.SetStatusCode(HttpStatusCode.Unauthorized);
+                    state.SetHandled(_response);
+                    break;
+
                 default:
                     break;
             }

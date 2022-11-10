@@ -76,11 +76,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Git\\temp\\CollisionsEventRestAPI\\CollisionsEventRestAPI\\Domain\\Domain.csproj",
+      "projectUniqueName": "C:\\Git\\CollisionsEventRestAPI\\Domain\\Domain.csproj",
       "projectName": "CollisionsEventRestAPI.Domain",
-      "projectPath": "C:\\Git\\temp\\CollisionsEventRestAPI\\CollisionsEventRestAPI\\Domain\\Domain.csproj",
+      "projectPath": "C:\\Git\\CollisionsEventRestAPI\\Domain\\Domain.csproj",
       "packagesPath": "C:\\Users\\amtp1\\.nuget\\packages\\",
-      "outputPath": "C:\\Git\\temp\\CollisionsEventRestAPI\\CollisionsEventRestAPI\\Domain\\obj\\",
+      "outputPath": "C:\\Git\\CollisionsEventRestAPI\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\amtp1\\AppData\\Roaming\\NuGet\\NuGet.Config",

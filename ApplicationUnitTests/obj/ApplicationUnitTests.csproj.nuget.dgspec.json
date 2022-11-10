@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Git\\temp\\CollisionsEventRestAPI\\CollisionsEventRestAPI\\ApplicationUnitTests\\ApplicationUnitTests.csproj": {}
+    "C:\\Git\\CollisionsEventRestAPI\\ApplicationUnitTests\\ApplicationUnitTests.csproj": {}
   },
   "projects": {
-    "C:\\Git\\temp\\CollisionsEventRestAPI\\CollisionsEventRestAPI\\ApplicationUnitTests\\ApplicationUnitTests.csproj": {
+    "C:\\Git\\CollisionsEventRestAPI\\ApplicationUnitTests\\ApplicationUnitTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Git\\temp\\CollisionsEventRestAPI\\CollisionsEventRestAPI\\ApplicationUnitTests\\ApplicationUnitTests.csproj",
+        "projectUniqueName": "C:\\Git\\CollisionsEventRestAPI\\ApplicationUnitTests\\ApplicationUnitTests.csproj",
         "projectName": "CollisionsEventRestAPI.ApplicationUnitTests",
-        "projectPath": "C:\\Git\\temp\\CollisionsEventRestAPI\\CollisionsEventRestAPI\\ApplicationUnitTests\\ApplicationUnitTests.csproj",
+        "projectPath": "C:\\Git\\CollisionsEventRestAPI\\ApplicationUnitTests\\ApplicationUnitTests.csproj",
         "packagesPath": "C:\\Users\\amtp1\\.nuget\\packages\\",
-        "outputPath": "C:\\Git\\temp\\CollisionsEventRestAPI\\CollisionsEventRestAPI\\ApplicationUnitTests\\obj\\",
+        "outputPath": "C:\\Git\\CollisionsEventRestAPI\\ApplicationUnitTests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\amtp1\\AppData\\Roaming\\NuGet\\NuGet.Config",

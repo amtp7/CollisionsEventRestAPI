@@ -970,11 +970,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Git\\temp\\CollisionsEventRestAPI\\CollisionsEventRestAPI\\Application\\Application.csproj",
+      "projectUniqueName": "C:\\Git\\CollisionsEventRestAPI\\Application\\Application.csproj",
       "projectName": "CollisionsEventRestAPI.Application",
-      "projectPath": "C:\\Git\\temp\\CollisionsEventRestAPI\\CollisionsEventRestAPI\\Application\\Application.csproj",
+      "projectPath": "C:\\Git\\CollisionsEventRestAPI\\Application\\Application.csproj",
       "packagesPath": "C:\\Users\\amtp1\\.nuget\\packages\\",
-      "outputPath": "C:\\Git\\temp\\CollisionsEventRestAPI\\CollisionsEventRestAPI\\Application\\obj\\",
+      "outputPath": "C:\\Git\\CollisionsEventRestAPI\\Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\amtp1\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -992,8 +992,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Git\\temp\\CollisionsEventRestAPI\\CollisionsEventRestAPI\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Git\\temp\\CollisionsEventRestAPI\\CollisionsEventRestAPI\\Domain\\Domain.csproj"
+            "C:\\Git\\CollisionsEventRestAPI\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Git\\CollisionsEventRestAPI\\Domain\\Domain.csproj"
             }
           }
         }

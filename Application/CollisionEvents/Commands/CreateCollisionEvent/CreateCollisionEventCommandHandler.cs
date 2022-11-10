@@ -1,5 +1,6 @@
 ﻿using System.Net;
 using AutoMapper;
+using CollisionsEventRestAPI.Application.Common.Exceptions;
 using CollisionsEventRestAPI.Application.Common.Interfaces;
 using CollisionsEventRestAPI.Application.DTOs;
 using CollisionsEventRestAPI.Domain.Entities;
@@ -20,6 +21,11 @@ namespace CollisionsEventRestAPI.Application.CollisionEvents.Commands.CreateColl
 
         public async Task<BaseDTO<Guid>> Handle(CreateCollisionEventCommand request, CancellationToken cancellationToken)
         {
+            if (request.OperatorId != request.InvokerOperatorId)
+            {
+                throw new UnauthorizedException();
+            }
+
             var entity = _mapper.Map<CollisionEvent>(request);
             var response = await _collisionEventsRepository.CreateCollisionEventAsync(entity, cancellationToken);
 

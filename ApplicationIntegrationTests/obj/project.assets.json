@@ -3970,11 +3970,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Git\\temp\\CollisionsEventRestAPI\\CollisionsEventRestAPI\\ApplicationIntegrationTests\\ApplicationIntegrationTests.csproj",
+      "projectUniqueName": "C:\\Git\\CollisionsEventRestAPI\\ApplicationIntegrationTests\\ApplicationIntegrationTests.csproj",
       "projectName": "CollisionsEventRestAPI.ApplicationIntegrationTests",
-      "projectPath": "C:\\Git\\temp\\CollisionsEventRestAPI\\CollisionsEventRestAPI\\ApplicationIntegrationTests\\ApplicationIntegrationTests.csproj",
+      "projectPath": "C:\\Git\\CollisionsEventRestAPI\\ApplicationIntegrationTests\\ApplicationIntegrationTests.csproj",
       "packagesPath": "C:\\Users\\amtp1\\.nuget\\packages\\",
-      "outputPath": "C:\\Git\\temp\\CollisionsEventRestAPI\\CollisionsEventRestAPI\\ApplicationIntegrationTests\\obj\\",
+      "outputPath": "C:\\Git\\CollisionsEventRestAPI\\ApplicationIntegrationTests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\amtp1\\AppData\\Roaming\\NuGet\\NuGet.Config",
